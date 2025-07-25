@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="./contactUs.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbarmain">
+      <h1>WebZone</h1>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="navlinks" id="navMenu">
+        <li><a href="/">Home</a></li>
+        <li><a href="./aboutUs.html">About Us</a></li>
+        <li><a href="./PrivacyPolicy.html">Privacy Policy</a></li>
+        <li><a href="./contactUs.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Contact Form -->
+    <div class="contactusmain">
+      <div class="contactusdetails">
+        <div class="contentbox6">
+          <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <p>Email: itsfarhan259@gmail.com</p>
+        <p>Phone: +92 3340490934</p>
+        <p>Address: Kohat, Pakistan</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/" class="footer-link">Home</a></li>
+          <li><a href="./aboutUs.html" class="footer-link">About Us</a></li>
+          <li><a href="./contactUs.html" class="footer-link">Contact Us</a></li>
+          <li>
+            <a href="./PrivacyPolicy.html" class="footer-link"
+              >Privacy Policy</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("navMenu");
+        menu.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
